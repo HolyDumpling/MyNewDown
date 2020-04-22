@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:id="@+id/ll_title"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+        <TextView
+            android:id="@+id/tv_Refresh"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_green_light"
+            android:text="刷新" />
+        <TextView
+            android:id="@+id/tv_add"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_blue_light"
+            android:text="添加任务" />
+        <TextView
+            android:id="@+id/tv_all_Start"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="@android:color/holo_orange_dark"
+            android:layout_height="match_parent"
+            android:text="全部开始"/>
+        <TextView
+            android:id="@+id/tv_all_Stop"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="@android:color/holo_blue_bright"
+            android:layout_height="match_parent"
+            android:text="全部暂停"/>
+        <TextView
+            android:id="@+id/tv_all_Cancel"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="@android:color/holo_green_dark"
+            android:layout_height="match_parent"
+            android:text="全部取消"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_list"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/ll_title"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

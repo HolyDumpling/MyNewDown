@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--仿京东分类轮播图的属性-->
+    <declare-styleable name="MagicCircleView">
+        <attr name="lineNum" format="integer" />
+        <attr name="lineColor" format="color" />
+        <attr name="strokeWidth" format="dimension" />
+        <attr name="ringSpacing" format="dimension" />
+        <attr name="imgError" format="reference"/>
+        <attr name="imgWait" format="reference"/>
+        <attr name="imgStop" format="reference"/>
+        <attr name="imgCompleter" format="reference"/>
+    </declare-styleable>
+</resources>
